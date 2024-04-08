@@ -1,7 +1,7 @@
 # Engine-Temperature-Monitoring-on-ARM-Cortex-M4-
 The project consists of two microcontrollers (both are tiva c), they are connected using CAN. First one is for data gathering from temperature sensor and the other to communicate with PC.
 
-***System	Overview***
+##System Overview
 
 The objective of this system is to monitor the temperature of the motor and act upon any faults in the system.
 2 ECUs will be communicating through CAN, ECU1 is responsible for reporting the system health to the PC and ECU2 is responsible for monitoring the motor and reporting to ECU1.
