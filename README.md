@@ -60,11 +60,19 @@ Application and SWCs requirements:
    
 Any timings that are not mentioned shall be defined and OS shall act accordingly
 
-### Drivers:
+#### MCAL Drivers:
 - DIO (AUTOSAR)
 - Port (AUTOSAR)
 - UART
 - Systick
 - EEPROM
 - ADC
+- CAN
+#### MHAL Drivers:
+- Button
+- Communication with PC
+- LED
+- Temperature sensor
+#### OS:
+I made a simple OS that changes between tasks periodically.
   
