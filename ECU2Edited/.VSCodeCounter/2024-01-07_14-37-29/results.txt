@@ -1,0 +1,80 @@
+Date : 2024-01-07 14:37:29
+Directory : c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project
+Total : 49 files,  13494 codes, 6229 comments, 1406 blanks, all 21129 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         23 |      7,395 |      5,689 |      1,154 |     14,238 |
+| XML      |          2 |      3,440 |          0 |          2 |      3,442 |
+| C        |         18 |      2,243 |        517 |        199 |      2,959 |
+| Makefile |          5 |        378 |         23 |         43 |        444 |
+| Batch    |          1 |         38 |          0 |          8 |         46 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                         | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                            |         49 |     13,494 |      6,229 |      1,406 |     21,129 |
+| . (Files)                                                                                    |         42 |      9,676 |      6,206 |      1,361 |     17,243 |
+| .launches                                                                                    |          1 |         16 |          0 |          1 |         17 |
+| Debug                                                                                        |          6 |      3,802 |         23 |         44 |      3,869 |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                     | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\.launches\final_project.launch   | XML      |         16 |          0 |          1 |         17 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Common_Macros.h                  | C++      |         11 |         19 |         11 |         41 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Compiler.h                       | C++      |         16 |         26 |         12 |         54 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Debug\final_project_linkInfo.xml | XML      |      3,424 |          0 |          1 |      3,425 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Debug\makefile                   | Makefile |        144 |          8 |         19 |        171 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Debug\objects.mk                 | Makefile |          2 |          3 |          4 |          9 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Debug\sources.mk                 | Makefile |        108 |          4 |          4 |        116 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Debug\subdir_rules.mk            | Makefile |          7 |          4 |          5 |         16 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Debug\subdir_vars.mk             | Makefile |        117 |          4 |         11 |        132 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Det.c                            | C        |         11 |         10 |          5 |         26 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Det.h                            | C++      |         22 |         21 |         12 |         55 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Dio.c                            | C        |        325 |        141 |         33 |        499 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Dio.h                            | C++      |         81 |        106 |         49 |        236 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Dio_Cfg.h                        | C++      |         29 |         26 |         16 |         71 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Dio_PBcfg.c                      | C        |         27 |         19 |          7 |         53 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Gpt.c                            | C        |         18 |         10 |          3 |         31 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Gpt.h                            | C++      |          5 |         24 |          5 |         34 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Mcu.c                            | C        |         23 |         14 |          5 |         42 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Mcu.h                            | C++      |         22 |         19 |         13 |         54 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Platform_Types.h                 | C++      |         37 |         33 |         14 |         84 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Port.c                           | C        |      1,124 |         15 |         19 |      1,158 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Port.h                           | C++      |         91 |        121 |         42 |        254 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Port_Cfg.h                       | C++      |         13 |         19 |         11 |         43 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Port_PBcfg.c                     | C        |         25 |         10 |          2 |         37 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Port_Reg.h                       | C++      |         46 |         15 |         11 |         72 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Std_Types.h                      | C++      |         29 |         25 |         13 |         67 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\SysTick.c                        | C        |         45 |         44 |         11 |        100 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\SysTick.h                        | C++      |         25 |         36 |         10 |         71 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Systick_cfg.c                    | C        |          3 |          6 |          3 |         12 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\Systick_cfg.h                    | C++      |          6 |          6 |          6 |         18 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\UART.c                           | C        |        194 |         53 |         21 |        268 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\UART.h                           | C++      |         50 |         17 |         16 |         83 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\UART_Cfg.h                       | C++      |          5 |          6 |          5 |         16 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\UART_PBcfg.c                     | C        |          5 |          6 |          8 |         19 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\UART_reg.h                       | C++      |         29 |          6 |          9 |         44 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\app.c                            | C        |         19 |         21 |          5 |         45 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\app.h                            | C++      |         12 |         10 |          2 |         24 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\button.c                         | C        |         37 |          7 |          4 |         48 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\button.h                         | C++      |         19 |          7 |          7 |         33 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\eeprom.c                         | C        |        104 |         54 |         48 |        206 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\eeprom.h                         | C++      |         16 |          7 |          8 |         31 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\led.c                            | C        |         29 |          7 |          4 |         40 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\led.h                            | C++      |         11 |         69 |          9 |         89 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\main.c                           | C        |         10 |          3 |          2 |         15 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\scheduler.c                      | C        |         49 |          0 |          9 |         58 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\scheduler.h                      | C++      |         16 |         17 |         16 |         49 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\tm4c123gh6pm.cmd                 | Batch    |         38 |          0 |          8 |         46 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\tm4c123gh6pm.h                   | C++      |      6,804 |      5,054 |        857 |     12,715 |
+| c:\Users\elmar\Eclipse_Workspaces\arm_diploma\final_project\tm4c123gh6pm_startup_ccs.c       | C        |        195 |         97 |         10 |        302 |
+| Total                                                                                        |          |     13,494 |      6,229 |      1,406 |     21,129 |
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

@@ -1,0 +1,401 @@
+******************************************************************************
+                  TI ARM Linker PC v20.2.7                     
+******************************************************************************
+>> Linked Tue Jan 16 20:58:04 2024
+
+OUTPUT FILE NAME:   <ECU1.out>
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00003225
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  00003370  0003cc90  R  X
+  SRAM                  20000000   00008000  000002a5  00007d5b  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00003370   00003370    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    00003072   00003072    r-x .text
+  000032de    000032de    00000052   00000052    r-- .const
+  00003330    00003330    00000040   00000040    r-- .cinit
+20000000    20000000    000002a5   00000000    rw-
+  20000000    20000000    00000200   00000000    rw- .stack
+  20000200    20000200    00000058   00000000    rw- .bss
+  20000258    20000258    0000004d   00000000    rw- .data
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     tm4c123gh6pm_startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    00003072     
+                  0000026c    00001876     Port.obj (.text)
+                  00001ae2    00000002     --HOLE-- [fill = 0]
+                  00001ae4    000004bc     UART.obj (.text)
+                  00001fa0    00000488     Dio.obj (.text)
+                  00002428    0000038c     adc.obj (.text)
+                  000027b4    000001bc     comm_pc.obj (.text)
+                  00002970    00000136     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_div_t2.asm.obj (.text)
+                  00002aa6    000000fc                                   : fd_mul_t2.asm.obj (.text)
+                  00002ba2    00000002     --HOLE-- [fill = 0]
+                  00002ba4    000000f0     app.obj (.text)
+                  00002c94    000000e0     scheduler.obj (.text)
+                  00002d74    000000c4     SysTick.obj (.text)
+                  00002e38    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.asm.obj (.text)
+                  00002ed4    00000084     Gpt.obj (.text)
+                  00002f58    00000076     button.obj (.text)
+                  00002fce    00000002     --HOLE-- [fill = 0]
+                  00002fd0    00000070     Mcu.obj (.text)
+                  00003040    0000006e     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_tos_t2.asm.obj (.text)
+                  000030ae    0000006c     led.obj (.text)
+                  0000311a    00000068     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  00003182    0000005e     temp_sen.obj (.text)
+                  000031e0    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  00003224    00000034                                   : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
+                  00003258    00000020                                   : u_tofd_t2.asm.obj (.text)
+                  00003278    0000001c                                   : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
+                  00003294    00000016     Det.obj (.text)
+                  000032aa    00000012     main.obj (.text)
+                  000032bc    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  000032ca    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
+                  000032d6    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  000032da    00000004                                   : exit.c.obj (.text:abort:abort)
+
+.const     0    000032de    00000052     
+                  000032de    00000048     Port_PBcfg.obj (.const:Port_Configuration)
+                  00003326    0000000a     Dio_PBcfg.obj (.const:Dio_Configuration)
+
+.cinit     0    00003330    00000040     
+                  00003330    0000001c     (.cinit..data.load) [load image, compression = lzss]
+                  0000334c    0000000c     (__TI_handler_table)
+                  00003358    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00003360    00000010     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.bss       0    20000200    00000058     UNINITIALIZED
+                  20000200    00000050     (.common:array)
+                  20000250    00000008     (.common:t_identifier)
+
+.data      0    20000258    0000004d     UNINITIALIZED
+                  20000258    00000024     adc.obj (.data)
+                  2000027c    0000000c     SysTick.obj (.data)
+                  20000288    00000008     scheduler.obj (.data)
+                  20000290    00000006     UART_PBcfg.obj (.data:UART_PBConfiguration)
+                  20000296    00000001     Port.obj (.data)
+                  20000297    00000001     --HOLE--
+                  20000298    00000005     Dio.obj (.data)
+                  2000029d    00000001     --HOLE--
+                  2000029e    00000004     Systick_cfg.obj (.data:config_systick_timer)
+                  200002a2    00000003     adc_cfg.obj (.data:ADC_Configuartions)
+
+.stack     0    20000000    00000200     UNINITIALIZED
+                  20000000    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
+                  20000004    000001fc     --HOLE--
+
+__llvm_prf_cnts 
+*          0    20000000    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                         code    ro data   rw data
+       ------                         ----    -------   -------
+    .\
+       Port.obj                       6262    0         1      
+       UART.obj                       1212    0         0      
+       Dio.obj                        1160    0         5      
+       adc.obj                        908     0         36     
+       tm4c123gh6pm_startup_ccs.obj   12      620       0      
+       comm_pc.obj                    444     0         0      
+       scheduler.obj                  224     0         96     
+       app.obj                        240     0         0      
+       SysTick.obj                    196     0         12     
+       Gpt.obj                        132     0         0      
+       button.obj                     118     0         0      
+       Mcu.obj                        112     0         0      
+       led.obj                        108     0         0      
+       temp_sen.obj                   94      0         0      
+       Port_PBcfg.obj                 0       72        0      
+       Det.obj                        22      0         0      
+       main.obj                       18      0         0      
+       Dio_PBcfg.obj                  0       10        0      
+       UART_PBcfg.obj                 0       0         6      
+       Systick_cfg.obj                0       0         4      
+       adc_cfg.obj                    0       0         3      
+    +--+------------------------------+-------+---------+---------+
+       Total:                         11262   702       163    
+                                                               
+    D:\code composer\ccs\tools\compiler\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+       fd_div_t2.asm.obj              310     0         0      
+       fd_mul_t2.asm.obj              252     0         0      
+       memcpy_t2.asm.obj              156     0         0      
+       fd_tos_t2.asm.obj              110     0         0      
+       copy_decompress_lzss.c.obj     104     0         0      
+       autoinit.c.obj                 68      0         0      
+       boot_cortex_m.c.obj            52      0         0      
+       u_tofd_t2.asm.obj              32      0         0      
+       copy_zero_init.c.obj           28      0         0      
+       copy_decompress_none.c.obj     14      0         0      
+       exit.c.obj                     4       0         0      
+       pre_init.c.obj                 4       0         0      
+    +--+------------------------------+-------+---------+---------+
+       Total:                         1134    0         0      
+                                                               
+       Stack:                         0       0         512    
+       Linker Generated:              0       64        0      
+    +--+------------------------------+-------+---------+---------+
+       Grand Total:                   12396   766       675    
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00003360 records: 2, size/record: 8, table size: 16
+	.data: load addr=00003330, load size=0000001c bytes, run addr=20000258, run size=0000004d bytes, compression=lzss
+	.bss: load addr=00003358, load size=00000008 bytes, run addr=20000200, run size=00000058 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 0000334c records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_lzss
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                          
+-------   ----                          
+20000258  ADC_ACTSS_R_ptr               
+200002a2  ADC_Configuartions            
+2000025c  ADC_EMUX_R_ptr                
+20000268  ADC_IM_R_ptr                  
+20000278  ADC_ISC_R_ptr                 
+00002429  ADC_Init_Start                
+20000270  ADC_PSSI_R_ptr                
+20000274  ADC_RIS_R_ptr                 
+0000267f  ADC_Read                      
+000026ff  ADC_Read_Volt                 
+20000264  ADC_SSCTL3_R_ptr              
+2000026c  ADC_SSFIFO3_R_ptr             
+20000260  ADC_SSMUX3_R_ptr              
+00002ba5  App_init                      
+00003001  BusFault_Init                 
+0000301d  Bus_Fault_Handler             
+00002f59  Button_getState               
+000032db  C$$EXIT                       
+00003295  Det_ReportError               
+00003326  Dio_Configuration             
+0000217f  Dio_FlipChannel               
+00001fa1  Dio_Init                      
+000020a5  Dio_ReadChannel               
+00002295  Dio_ReadChannelGroup          
+00001fc5  Dio_WriteChannel              
+00002357  Dio_WriteChannelGroup         
+00002fd1  Mcu_Init                      
+00002cc9  OS_start                      
+00002d33  Os_NewTimerTick               
+000032de  Port_Configuration            
+0000026d  Port_Init                     
+00000c4b  Port_RefreshPortDirection     
+000007af  Port_SetPinDirection          
+00000e15  Port_SetPinMode               
+000030df  Red_led                       
+000032cb  ResetISR                      
+00002e15  SysTick_Handler               
+00002e05  SysTick_SetCallBack           
+00002dfd  SysTick_Stop                  
+00002d75  Systick_INIT                  
+00002dc1  Systick_delay                 
+00001e41  UART0_ReceiveByte             
+00001f19  UART0_ReceiveData             
+00001e8d  UART0_ReceiveString           
+00001e25  UART0_SendByte                
+00001ec5  UART0_SendData                
+00001e5d  UART0_SendString              
+00001bfd  UART_Init                     
+20000290  UART_PBConfiguration          
+20000200  __STACK_END                   
+00000200  __STACK_SIZE                  
+20000200  __STACK_TOP                   
+00003360  __TI_CINIT_Base               
+00003370  __TI_CINIT_Limit              
+0000334c  __TI_Handler_Table_Base       
+00003358  __TI_Handler_Table_Limit      
+000031e1  __TI_auto_init_nobinit_nopinit
+0000311b  __TI_decompress_lzss          
+000032bd  __TI_decompress_none          
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+00000000  __TI_static_base__            
+00003279  __TI_zero_init_nomemset       
+00003041  __aeabi_d2f                   
+00002971  __aeabi_ddiv                  
+00002aa7  __aeabi_dmul                  
+00002e39  __aeabi_memcpy                
+00002e39  __aeabi_memcpy4               
+00002e39  __aeabi_memcpy8               
+00003259  __aeabi_ui2d                  
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+UNDEFED   __mpu_init                    
+20000000  __stack                       
+20000000  __start___llvm_prf_cnts       
+20000000  __stop___llvm_prf_cnts        
+00003225  _c_int00_noargs               
+UNDEFED   _system_post_cinit            
+000032d7  _system_pre_init              
+000032db  abort                         
+20000200  array                         
+ffffffff  binit                         
+000030cf  blue_led                      
+000030ff  clear_leds                    
+2000029e  config_systick_timer          
+00002ed5  delay_timerA                  
+00002871  floatToAsciiAndSendPC         
+00000000  g_pfnVectors                  
+00002f81  get_input                     
+000030ef  green_led                     
+2000028c  i                             
+00002807  intToAsciiAndSendPC           
+000032ab  main                          
+00002e39  memcpy                        
+000027b5  reverse                       
+0000295f  sendPC                        
+2000027c  systick_counter               
+20000280  systick_flag                  
+20000250  t_identifier                  
+20000288  task_i                        
+00002c95  task_init                     
+00003183  temperatureSensorRead         
+00002bb3  test_task_1                   
+00002bef  test_task_2                   
+00002bfd  test_task_3                   
+000030af  white_led                     
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                          
+-------   ----                          
+00000000  __TI_static_base__            
+00000000  g_pfnVectors                  
+00000200  __STACK_SIZE                  
+0000026d  Port_Init                     
+000007af  Port_SetPinDirection          
+00000c4b  Port_RefreshPortDirection     
+00000e15  Port_SetPinMode               
+00001bfd  UART_Init                     
+00001e25  UART0_SendByte                
+00001e41  UART0_ReceiveByte             
+00001e5d  UART0_SendString              
+00001e8d  UART0_ReceiveString           
+00001ec5  UART0_SendData                
+00001f19  UART0_ReceiveData             
+00001fa1  Dio_Init                      
+00001fc5  Dio_WriteChannel              
+000020a5  Dio_ReadChannel               
+0000217f  Dio_FlipChannel               
+00002295  Dio_ReadChannelGroup          
+00002357  Dio_WriteChannelGroup         
+00002429  ADC_Init_Start                
+0000267f  ADC_Read                      
+000026ff  ADC_Read_Volt                 
+000027b5  reverse                       
+00002807  intToAsciiAndSendPC           
+00002871  floatToAsciiAndSendPC         
+0000295f  sendPC                        
+00002971  __aeabi_ddiv                  
+00002aa7  __aeabi_dmul                  
+00002ba5  App_init                      
+00002bb3  test_task_1                   
+00002bef  test_task_2                   
+00002bfd  test_task_3                   
+00002c95  task_init                     
+00002cc9  OS_start                      
+00002d33  Os_NewTimerTick               
+00002d75  Systick_INIT                  
+00002dc1  Systick_delay                 
+00002dfd  SysTick_Stop                  
+00002e05  SysTick_SetCallBack           
+00002e15  SysTick_Handler               
+00002e39  __aeabi_memcpy                
+00002e39  __aeabi_memcpy4               
+00002e39  __aeabi_memcpy8               
+00002e39  memcpy                        
+00002ed5  delay_timerA                  
+00002f59  Button_getState               
+00002f81  get_input                     
+00002fd1  Mcu_Init                      
+00003001  BusFault_Init                 
+0000301d  Bus_Fault_Handler             
+00003041  __aeabi_d2f                   
+000030af  white_led                     
+000030cf  blue_led                      
+000030df  Red_led                       
+000030ef  green_led                     
+000030ff  clear_leds                    
+0000311b  __TI_decompress_lzss          
+00003183  temperatureSensorRead         
+000031e1  __TI_auto_init_nobinit_nopinit
+00003225  _c_int00_noargs               
+00003259  __aeabi_ui2d                  
+00003279  __TI_zero_init_nomemset       
+00003295  Det_ReportError               
+000032ab  main                          
+000032bd  __TI_decompress_none          
+000032cb  ResetISR                      
+000032d7  _system_pre_init              
+000032db  C$$EXIT                       
+000032db  abort                         
+000032de  Port_Configuration            
+00003326  Dio_Configuration             
+0000334c  __TI_Handler_Table_Base       
+00003358  __TI_Handler_Table_Limit      
+00003360  __TI_CINIT_Base               
+00003370  __TI_CINIT_Limit              
+20000000  __stack                       
+20000000  __start___llvm_prf_cnts       
+20000000  __stop___llvm_prf_cnts        
+20000200  __STACK_END                   
+20000200  __STACK_TOP                   
+20000200  array                         
+20000250  t_identifier                  
+20000258  ADC_ACTSS_R_ptr               
+2000025c  ADC_EMUX_R_ptr                
+20000260  ADC_SSMUX3_R_ptr              
+20000264  ADC_SSCTL3_R_ptr              
+20000268  ADC_IM_R_ptr                  
+2000026c  ADC_SSFIFO3_R_ptr             
+20000270  ADC_PSSI_R_ptr                
+20000274  ADC_RIS_R_ptr                 
+20000278  ADC_ISC_R_ptr                 
+2000027c  systick_counter               
+20000280  systick_flag                  
+20000288  task_i                        
+2000028c  i                             
+20000290  UART_PBConfiguration          
+2000029e  config_systick_timer          
+200002a2  ADC_Configuartions            
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+ffffffff  binit                         
+UNDEFED   __mpu_init                    
+UNDEFED   _system_post_cinit            
+
+[107 symbols]
