@@ -73,6 +73,7 @@ Any timings that are not mentioned shall be defined and OS shall act accordingly
 - Communication with PC
 - LED
 - Temperature sensor
+- DET (AUTOSAR)
 #### OS:
 I made a simple OS that changes between tasks periodically.
   
